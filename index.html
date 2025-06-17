@@ -63,6 +63,29 @@
       background: rgba(255, 255, 255, 0.2);
       transform: scale(1.05);
     }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      color: #fff;
+    }
+    input, textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      background-color: #ffeb3b;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #fdd835;
+    }
     footer {
       text-align: center;
       padding: 20px;
@@ -113,6 +136,20 @@
         GitHub: <br><strong><a href="https://github.com/Esther455" target="_blank">Esther455</a></strong>
       </div>
     </div>
+  </section>
+
+  <section>
+    <h2>Send a Message</h2>
+    <form action="https://formspree.io/f/moqgkzqk" method="POST">
+      <label>Your Name:</label>
+      <input type="text" name="name" required>
+      <label>Your Email:</label>
+      <input type="email" name="email" required>
+      <label>Your Message:</label>
+      <textarea name="message" rows="5" required></textarea>
+      <input type="submit" value="Send Message">
+    </form>
+    <p style="text-align:center; margin-top:10px;">Thank you for reaching out to Klearkryst! We will respond as soon as possible. — Esther 🌟</p>
   </section>
 
   <footer>
